@@ -50,7 +50,7 @@ public:
 	int maxKey() const;
 	int minKey() const;
 
-	Node* addKey(int key);
+	virtual Node* addKey(int key);
 	Node* findKey(int key) const;
 
 	bool removeKey(int key);
