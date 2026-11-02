@@ -47,11 +47,11 @@ public:
 
 	int countNodes() const;
 
-	int maxKey() const;
-	int minKey() const;
+	virtual int maxKey() const;
+	virtual int minKey() const;
 
 	virtual Node* addKey(int key);
-	Node* findKey(int key) const;
+	virtual Node* findKey(int key) const;
 
 	bool removeKey(int key);
 	Node* searchParent(Node* root, Node* node) const;
