@@ -4,6 +4,17 @@ BinarySearchTree::BinarySearchTree(Node* node)
 {
 	setRoot(node);
 }
+int BinarySearchTree::maxKey() const
+{
+	Node* m_root = nullptr;
+	return maxKey(m_root);
+}
+
+int BinarySearchTree::minKey() const
+{
+	Node* m_root = nullptr;
+	return minKey(m_root);
+}
 
 
 BinarySearchTree::Node* BinarySearchTree::findKey(int key) const
