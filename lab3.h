@@ -15,8 +15,6 @@ public:
 
 	
 	using BinaryTree::removeKey;
-	using BinaryTree::minKey;
-	using BinaryTree::maxKey;
 	using BinaryTree::nodeHeightIndex;
 	using BinaryTree::getVectorKeys;
 	using BinaryTree::findKey;
@@ -26,6 +24,8 @@ public:
     Node* addKey(int key) override;
 	Node* addKey(Node* root, int key) override;
 	Node* findKey(int key) const;
+    int minKey(Node* root) const override;
+    int maxKey(Node* root) const override;
 
 	bool removeKey(Node* root, int key) override;
 
