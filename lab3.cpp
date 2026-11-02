@@ -10,7 +10,19 @@ BinarySearchTree::Node* BinarySearchTree::findKey(int key) const
 {
 	return findKey(root(), key);
 }
+BinarySearchTree::Node* BinarySearchTree::addKey(int key) 
+{
+	
+	Node* newRoot = addKey(root(), key);
 
+	if (root() == nullptr) {
+		setRoot(newRoot);
+	}
+
+	return newRoot;
+	
+
+}
 BinarySearchTree::Node* BinarySearchTree::addKey(Node* root, int key)
 {
 	if (!root) {
