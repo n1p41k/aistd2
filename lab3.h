@@ -13,7 +13,7 @@ public:
 
 	~BinarySearchTree() override = default;
 
-	using BinaryTree::addKey;
+	
 	using BinaryTree::removeKey;
 	using BinaryTree::minKey;
 	using BinaryTree::maxKey;
@@ -23,6 +23,7 @@ public:
 	BinarySearchTree& operator=(const BinarySearchTree& other) = default;
 	BinarySearchTree& operator=(BinarySearchTree&& other) = default;
 
+    Node* addKey(int key) override;
 	Node* addKey(Node* root, int key) override;
 	Node* findKey(int key) const;
 
